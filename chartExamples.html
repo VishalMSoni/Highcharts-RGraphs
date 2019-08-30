@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="drilldown" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="stackedChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="stackedGroupChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+    <hr>
+    <div id="donutChart" style="height: 400px"></div>
+    <hr>
+    <div style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto">
+        <h1 style="text-align: center; text-decoration: underline; padding: 20px;">Combined Chart</h1>
+        <canvas id="combinedChart" width="800" height="400px">[No canvas support]</canvas>
+    </div>
+    <div style="padding: 50px;"></div>
+    <hr>
+    <div style="text-align: center;">
+        <h1 style="text-decoration: underline;">Progress Chart</h1>
+        <canvas id="progressBar" width="600" height="275">
+            [No canvas support]
+        </canvas>
+    </div>
+
+    <!-- Rgraph libraries -->
+    <script src="./libraries/RGraph.bar.js"></script>
+    <script src="./libraries/RGraph.hbar.js"></script>
+    <script src="./libraries/RGraph.line.js"></script>
+    <script src="./libraries/RGraph.pie.js"></script>
+    <script src="./libraries/RGraph.common.key.js"></script>
+    <script src="./libraries/RGraph.common.core.js"></script>
+    <script src="./libraries/RGraph.drawing.yaxis.js"></script>
+    <script src="./libraries/RGraph.common.tooltips.js"></script>
+    <script src="./libraries/RGraph.common.dynamic.js"></script>
+
+    <!-- highcharts libraries -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <!-- drilldown -->
+    <script src="./drilldown.js"></script>
+
+    <!-- chart 1 -->
+    <script src="./stackedChart.js"></script>
+
+    <!-- chart 2 -->
+    <script src="./stackedGroupChart.js"></script>
+
+    <!-- chart 3 -->
+    <script src="./donutChart.js"></script>
+
+    <!-- chart 4 -->
+    <script src="./combinedChart.js"></script>
+
+    <!-- chart 5 -->
+    <script src="./progressBar.js"></script>
+</body>
+
+</html>
